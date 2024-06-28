@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Promedios SMSI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p align="center" id="title">
+        Promedios SMSI
+    </p>
+    <div id="separator">
+        <p id="subtitle">
+            Cual es mi promedio si me saco un ... en ...?
+        </p>
+        <div class="input" id="inpOne">
+            <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpOne">
+            <input type="number" placeholder="Promedio Actitudunial" min="0" max="10" class="inpOne">
+            <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpOne">
+        </div>
+        <div class="input" id="newOne">
+            <input type="number" placeholder="Nuevo Promedio Formativa" min="0" max="10" class="newOne">
+            <input type="number" placeholder="Nuevo Promedio Sumativa" min="0" max="10" class="newOne">
+        </div>
+        <button id="calculateFirst">Calcular</button>
+        <p class="ends">
+            Promedio:<p class="promedios" id="primero"></p>
+        </p>
+        <p id="subtitle">
+            Cuanto me tengo que sacar en ... para tener un ... si mis promedios son ...?
+        </p>
+        <div class="input" id="inpTwo">
+            <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpTwo">
+            <input type="number" placeholder="Promedio Actitudunial" min="0" max="10" class="inpTwo">
+            <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpTwo">
+        </div>
+        <div class="input" id="newTwo">
+            <input type="number" placeholder="Nota que quiero" min="0" max="10" class="newTwo">
+        </div>
+        <button id="calculateSecond">Calcular</button>
+        <p class="ends">
+            Nota Necesaria:<p class="promedios" id="segundo"></p>
+        </p>
+        <p class="bottom" align="center">Creado por Fran Torno (S3B) - <a href="https://github.com/Zhyov" target="_blank" class="contentTwo">GitHub</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

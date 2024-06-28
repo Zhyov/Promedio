@@ -1,0 +1,93 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: #202020;
+    font-size: 18px;
+}
+
+#title {
+    font-size: 32px;
+    font-weight: bold;
+}
+#subtitle {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#separator {
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1200px) {
+    #separator {
+        width: 1170px;
+    }
+}   
+@media (min-width: 992px) {
+    #separator {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    #separator {
+        width: 750px;
+    }
+}
+
+button {
+    transition: 0.15s;
+    width: 100%;
+    padding: 12px;
+    background-color: #444444;
+    border: 0;
+    border-radius: 10px;
+}
+button:hover {
+    transition: 0.15s;
+    transform: scale(1.03);
+}
+button:active {
+    transition: 0.15s;
+    transform: scale(0.97);
+}
+
+#bottom {
+    margin-top: 14%;
+}
+
+.ends {
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 14%;
+}
+
+.promedios {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 2%;
+}
+input {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 12px;
+}
+.inpOne, .inpTwo {
+    width: 29.15%;
+}
+.newOne {
+    width: 45.9%;
+}
+.newTwo {
+    width: 96%;
+}
