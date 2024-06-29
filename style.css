@@ -75,20 +75,24 @@ button:active {
 .input {
     width: 100%;
     margin-bottom: 2%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
 }
 input, select {
     border: 2px;
+    padding: 12px;
     border-style: solid;
     border-radius: 10px;
-    padding: 12px;
     text-align: center;
 }
 .inpOne, .inpTwo {
-    width: 29.15%;
+    width: 33%;
 }
 .newOne {
-    width: 45.9%;
+    width: 50%;
 }
 .newTwo {
-    width: 96%;
+    width: 100%;
 }
