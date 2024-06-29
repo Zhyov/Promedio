@@ -16,13 +16,13 @@
             Cual es mi promedio si me saco un ... en ...?
         </p>
         <div class="input" id="inpOne">
-            <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpOne">
-            <input type="number" placeholder="Promedio Actitudunial" min="0" max="10" class="inpOne">
-            <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpOne">
+            <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpOne" id="fOne">
+            <input type="number" placeholder="Promedio Actitudinal" min="0" max="10" class="inpOne" id="aOne">
+            <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpOne" id="sOne">
         </div>
         <div class="input" id="newOne">
-            <input type="number" placeholder="Nuevo Promedio Formativa" min="0" max="10" class="newOne">
-            <input type="number" placeholder="Nuevo Promedio Sumativa" min="0" max="10" class="newOne">
+            <input type="number" placeholder="Nuevo Promedio Formativa" min="0" max="10" class="newOne" id="fNew">
+            <input type="number" placeholder="Nuevo Promedio Sumativa" min="0" max="10" class="newOne" id="sNew">
         </div>
         <button id="calculateFirst">Calcular</button>
         <p class="ends">
@@ -32,12 +32,16 @@
             Cuanto me tengo que sacar en ... para tener un ... si mis promedios son ...?
         </p>
         <div class="input" id="inpTwo">
-            <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpTwo">
-            <input type="number" placeholder="Promedio Actitudunial" min="0" max="10" class="inpTwo">
-            <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpTwo">
+            <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpTwo" id="fTwo">
+            <input type="number" placeholder="Promedio Actitudinal" min="0" max="10" class="inpTwo" id="aTwo">
+            <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpTwo" id="sTwo">
         </div>
+        <select name="Tipo de Nota" class="input" id="typeTwo">
+            <option value="Formativa">Formativa</option>
+            <option value="Sumativa">Sumativa</option>
+        </select>
         <div class="input" id="newTwo">
-            <input type="number" placeholder="Nota que quiero" min="0" max="10" class="newTwo">
+            <input type="number" placeholder="Nota que quiero" min="0" max="10" class="newTwo" id="nTwo">
         </div>
         <button id="calculateSecond">Calcular</button>
         <p class="ends">
