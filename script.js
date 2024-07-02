@@ -1,3 +1,5 @@
+// thank you chat gpt for the code
+
 function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
 }
