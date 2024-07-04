@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
     <title>Promedios SMSI</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <p align="center" id="title">
-        Promedios SMSI
-    </p>
+    <div id="navTop">
+        <div id="left">
+            <img src="logo.png">
+            <span id="title">Promedios SMSI</span>
+        </div>
+        <div id="right">
+            <span>release 1.1.0</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <div id="separator">
         <p id="subtitle">
             ¿Como me queda el promedio final?
@@ -23,6 +35,10 @@
             <input type="number" placeholder="Promedio Formativa" min="0" max="10" class="inpOne" id="fOne">
             <input type="number" placeholder="Promedio Actitudinal" min="0" max="10" class="inpOne" id="aOne">
             <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpOne" id="sOne">
+        </div>
+        <div class="input" id="cantOne">
+            <input type="number" placeholder="Numero de Formativas" min="0" max="10" class="cantOne" id="cfOne">
+            <input type="number" placeholder="Numero de Sumativas" min="0" max="10" class="cantOne" id="csOne">
         </div>
         <button id="calculateFirst">Calcular</button>
         <p class="ends">
@@ -43,11 +59,25 @@
             <input type="number" placeholder="Promedio Actitudinal" min="0" max="10" class="inpTwo" id="aTwo">
             <input type="number" placeholder="Promedio Sumativa" min="0" max="10" class="inpTwo" id="sTwo">
         </div>
+        <div class="input" id="cantTwo">
+            <input type="number" placeholder="Numero de Formativas" min="0" max="10" class="cantTwo" id="cfTwo">
+            <input type="number" placeholder="Numero de Sumativas" min="0" max="10" class="cantTwo" id="csTwo">
+        </div>
         <button id="calculateSecond">Calcular</button>
         <p class="ends">
             Nota necesaria:<p class="promedios" id="segundo"></p>
         </p>
     </div>
+    <div id="creditos">
+        <p id="subtitle" align="center">Creditos</p>
+        <p align="center">Codigo: Fran Torno</p>
+        <p align="center">Matematica: Santi Gil y Fran Torno</p>
+        <p align="center">Idea: Santi Gil</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <div id="navBottom">
