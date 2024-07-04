@@ -1,14 +1,16 @@
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', arial;
     color: white;
     background-color: #202020;
     font-size: 18px;
+    margin: 0;
 }
 
-#title {
-    font-size: 36px;
-    font-weight: bold;
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
+
 #subtitle {
     font-size: 24px;
     font-weight: bold;
@@ -79,16 +81,19 @@ button:active {
     text-align: center;
 }
 input, select {
+    transition: 0.15s;
     border: 2px;
     padding: 12px;
     border-style: solid;
     border-radius: 10px;
+    border-color: white;
     text-align: center;
+    
 }
 .inpOne, .inpTwo {
     width: 33%;
 }
-.newOne {
+.newOne, .cantOne, .cantTwo {
     width: 50%;
 }
 .newTwo {
@@ -101,6 +106,31 @@ input, select {
     width: 100%;
     height: 8%;
     bottom: 0px;
+    z-index: 999;
+}
+
+#navTop {
+    display: flex;
+    background-color: #161616;
+    vertical-align: top;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    margin: 0px;
+    z-index: 999;
+}
+#left {
+    justify-content: left;
+    display: flex;
+    width:  60%;
+    background-color: #161616;
+}
+#right {
+    justify-content: right;
+    display: flex;
+    width: 40%;
+    margin-right: 0;
+    background-color: #161616;
 }
 
 a {
@@ -125,4 +155,35 @@ a:hover {
 
 ::-webkit-scrollbar-thumb {
     background: #AAAAAA;
+}
+
+#title, #right span {
+    background-color: #161616;
+    height: fit-content;
+}
+
+#title {
+    font-family: 'Ubuntu', arial;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+img {
+    background-color: #161616;
+}
+
+@media (min-width: 768px) {
+    #right span {
+        
+        margin-right: 3.5%;
+        margin-top: 3.5%;
+    }
+    img {
+        margin: 1.25%;  
+        height: 60%;
+        width: 4.25%;
+    }
+    #title {
+        margin-top: 2.25%;
+    }
 }
