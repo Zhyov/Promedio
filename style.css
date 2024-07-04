@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-p {
+p, span {
     margin-top: 8px;
     margin-bottom: 8px;
 }
